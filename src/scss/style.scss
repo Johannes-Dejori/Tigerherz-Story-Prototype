@@ -1,1 +1,70 @@
 @import "preset";
+
+body {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+
+  #questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+
+    div {
+      width: 1000px;
+      margin: 40px;
+      padding: 40px;
+      background-color: white;
+
+      #name {
+        font-size: 26px;
+      }
+    }
+
+    #activate {
+      width: 150px;
+      padding: 20px;
+      font-size: 26px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  #story {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+
+    #return {
+      width: 200px;
+      padding: 20px;
+      margin-bottom: 40px;
+      font-size: 26px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    h1 {
+      padding: 20px 0px;
+    }
+
+    #elefant {
+      margin: 40px;
+      width: 300px;
+    }
+  }
+}

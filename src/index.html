@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base Template</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modular Story Prototype</title>
+</head>
+
+<body>
+
+  <div id="questions">
+
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+      <label>Geschlecht:</label>
+
+      <input type="radio" id="männlich" name="geschlecht" value="männlich">
+      <label for="männlich">Männlich</label>
+
+      <input type="radio" id="weiblich" name="geschlecht" value="weiblich">
+      <label for="weiblich">Weiblich</label>
+    </div>
+
+    <button id="activate" onclick="activateStory()">Story</button>
+
+  </div>
+
+  <div id="story">
+    <button id="return" onclick="resetStory()">&#8617; Restart</button>
+
+    <div>
+      <h1>Einführung</h1>
+      <p id="storyInner"></p>
+    </div>
+
+    <img id="elefant" src="./Elefant.png" alt="Elefant">
+  </div>
 
 
 
-    <script type="module" src="./js/main.js"></script>
-  </body>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>
